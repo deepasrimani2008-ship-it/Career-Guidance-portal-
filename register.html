@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Career Guidance Portal</title>
+<link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        🎓 Career <span>Guidance</span>
+    </div>
+
+    <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="streams.html">Career Streams</a>
+        <a href="tips.html">Tips</a>
+        <a href="resources.html">Resources</a>
+        <a href="alumni.html">Alumni</a>
+        <a href="register.html">Register</a>
+    </div>
+</nav>
+
+<!-- Search Box -->
+<div class="search-box">
+    <input type="text" placeholder="Search courses, tips, resources...">
+    <button>🔍</button>
+</div>
+
+<!-- Header -->
+<header>
+    <h1>Register for Career Guidance</h1>
+    <p>Sign up to access career resources, tips, and guidance.</p>
+</header>
+
+<!-- Registration Form Section -->
+<section class="form-section">
+    <form id="registerForm">
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="10" max="100" required>
+
+        <label for="career-interest">Career Interest</label>
+        <select id="career-interest" name="career-interest" required>
+            <option value="">Select</option>
+            <option value="engineering">Engineering</option>
+            <option value="medical">Medical</option>
+            <option value="arts">Arts</option>
+            <option value="commerce">Commerce</option>
+            <option value="others">Others</option>
+        </select>
+
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <input type="submit" value="Register">
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+
+        <div class="footer-section">
+            <h3>Career Guidance</h3>
+            <p>Helping students explore career paths and build a better future.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <p>Home</p>
+            <p>Career Streams</p>
+            <p>Resources</p>
+            <p>Tips</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>Email: careerportal@gmail.com</p>
+            <p>Phone: +91 7894560929</p>
+        </div>
+
+    </div>
+
+    <p class="footer-bottom">© 2026 Career Guidance Portal</p>
+</footer>
+
+<script src="register.js"></script>
+</body>
+</html>

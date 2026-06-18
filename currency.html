@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Payment</title>
+</head>
+<body>
+
+<h1>Online Payment Form</h1>
+
+<form onsubmit="return validatePayment()">
+    <label>Card Number:</label><br>
+    <input type="text" id="card"><br><br>
+
+    <label>Expiry Date:</label><br>
+    <input type="month" id="expiry"><br><br>
+
+    <label>CVV:</label><br>
+    <input type="password" id="cvv"><br><br>
+
+    <input type="submit" value="Pay Now">
+</form>
+
+<p id="msg" style="color:red;"></p>
+
+<script>
+function validatePayment() {
+    var card = document.getElementById("card").value;
+    var expiry = document.getElementById("expiry").value;
+    var cvv = document.getElementById("cvv").value;
+    var message = "";
+
+    if (card.length != 16) {
+        message = "Card number must be 16 digits";
+    }
+    else if (expiry === "") {
+        message = "Please select expiry date";
+    }
+    else if (cvv.length != 3) {
+        message = "CVV must be 3 digits";
+    }
+    else {
+        alert("Payment Successful");
+        return true;
+    }
+
+    document.getElementById("msg").innerHTML = message;
+    return false;
+}
+</script>

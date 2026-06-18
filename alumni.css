@@ -1,0 +1,189 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* Body */
+body{
+    background:#fdfdfd;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f5f5f5;
+    padding:15px 40px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    flex-wrap:wrap;
+}
+
+/* Logo */
+.logo{
+    font-size:26px;
+    font-weight:bold;
+    color:#0072ff; /* darker blue */
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:#00c6a9; /* greenish accent */
+}
+
+/* Navigation links */
+.nav-links a{
+    color:#333;
+    text-decoration:none;
+    margin:0 10px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    color:#0072ff;
+}
+
+/* Header */
+header{
+    background:#e6f0ff; /* light blue background */
+    color:#0072ff;
+    text-align:center;
+    padding:60px 20px;
+    border-radius:10px;
+    margin:20px;
+}
+
+header h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:18px;
+    opacity:0.8;
+}
+
+/* Alumni Section */
+.alumni-section{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:40px 20px;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.alumni-card{
+    background:#ffffff;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.05);
+    padding:20px;
+    text-align:center;
+    width:250px;
+    transition:0.3s;
+}
+
+.alumni-card:hover{
+    transform:translateY(-5px);
+}
+
+.alumni-card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    margin-bottom:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.alumni-card h3{
+    color:#0072ff;
+    margin-bottom:5px;
+}
+
+.alumni-card .stream{
+    font-weight:500;
+    color:#00c6a9;
+    margin-bottom:8px;
+}
+
+.alumni-card .achievement{
+    font-size:14px;
+    opacity:0.8;
+}
+
+/* Footer */
+footer{
+    background:#f5f5f5;
+    color:#333;
+    padding:40px 20px;
+    margin-top:40px;
+    border-top:1px solid #ddd;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.footer-section{
+    max-width:250px;
+}
+
+.footer-section h3{
+    color:#0072ff;
+    margin-bottom:10px;
+}
+
+.footer-section p{
+    font-size:14px;
+    margin:5px 0;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:20px;
+    padding-top:10px;
+    border-top:1px solid rgba(0,0,0,0.1);
+    font-size:14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .nav-links a{
+        display:block;
+        margin:8px 0;
+    }
+
+    header h1{
+        font-size:28px;
+    }
+
+    .alumni-section{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }
+}
